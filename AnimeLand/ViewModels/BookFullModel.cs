@@ -9,7 +9,7 @@ namespace AnimeLand.ViewModels
     public class BookFullModel
     {
         public Books Books { get; set; }
-        public List<BookAuthors> BookAuthors { get; set; }
-        public List<BookGenres> BookGenres { get; set; }
+        public IQueryable<Authors> BookAuthors { get; set; }
+        public IQueryable<Genres> BookGenres { get; set; }
     }
 }

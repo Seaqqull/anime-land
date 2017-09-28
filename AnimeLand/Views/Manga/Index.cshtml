@@ -1,4 +1,6 @@
-﻿@model IEnumerable<AnimeLand.Models.Books>
+﻿@model PagedList.IPagedList<AnimeLand.Models.Books>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
 @*
     
 *@
@@ -20,13 +22,15 @@
         <div class="col-md-5">
             <h3>@item.TitleEng</h3>
             <p>@item.Discription.Substring(0, 200)</p>
-            <a class="btn btn-primary" href="#">View</a>
+            @Html.ActionLink("View", "Detail", "Manga", new { id = item.Id }, new {@class = "btn btn-primary" })
         </div>
     </div>
     <hr>
 }
 
-<!-- Pagination -->
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+
+<!-- Pagination 
 <ul class="pagination justify-content-center">
 <li class="page-item">
     <a class="page-link" href="#" aria-label="Previous">
@@ -49,4 +53,4 @@
     <span class="sr-only">Next</span>
     </a>
 </li>
-</ul>
+</ul>-->

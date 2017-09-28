@@ -127,3 +127,7 @@ D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.Migrations.Ad
 D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.Migrations.AddBooks.resources
 D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.Migrations.AddBooksAuthors.resources
 D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.Migrations.AddBooksGenres.resources
+D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\bin\PagedList.dll
+D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\bin\PagedList.Mvc.dll
+D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\bin\PagedList.xml
+D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\bin\PagedList.Mvc.xml

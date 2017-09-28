@@ -1,0 +1,36 @@
+﻿@model AnimeLand.ViewModels.BookFullModel
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="my-4">@Model.Books.TitleEng</h2>
+
+<div class="row">
+    <div class="col-md-7">
+        <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="@Model.Books.ImagePath.Substring(1)" alt="">
+        </a>
+    </div>
+    <div class="col-md-5">
+        <h4>Genres:</h4>
+        <p>
+            @foreach (var item in Model.BookGenres.ToList())
+            {
+                <i>@item.Name</i><br>
+            }
+        </p>
+        <h4>Authors:</h4>
+        <p>
+            @foreach (var item in Model.BookAuthors.ToList())
+            {
+                <i>@item.FIO</i><br>
+            }
+        </p>      
+    </div>
+    <div class="col-md-12 mt-2">
+        <p>@Model.Books.Discription</p>
+    </div>
+</div>
+
