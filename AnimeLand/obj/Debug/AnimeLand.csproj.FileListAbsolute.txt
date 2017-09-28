@@ -122,3 +122,5 @@ D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.csproj.Genera
 D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.Migrations.BooksModel.resources
 D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.Migrations.BookAuthors_BookGenres.resources
 D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.Migrations.BookImagePath.resources
+D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.Migrations.AddGenres.resources
+D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.Migrations.AddFieldYearPublish.resources

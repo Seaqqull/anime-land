@@ -212,6 +212,14 @@
     <Compile Include="Migrations\201709281837367_BookImagePath.Designer.cs">
       <DependentUpon>201709281837367_BookImagePath.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709281902354_AddGenres.cs" />
+    <Compile Include="Migrations\201709281902354_AddGenres.Designer.cs">
+      <DependentUpon>201709281902354_AddGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709281958377_AddFieldYearPublish.cs" />
+    <Compile Include="Migrations\201709281958377_AddFieldYearPublish.Designer.cs">
+      <DependentUpon>201709281958377_AddFieldYearPublish.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Authors.cs" />
@@ -232,6 +240,12 @@
     <Content Include="Content\bootstrap_4.css" />
     <Content Include="Content\bootstrap_4.min.css" />
     <Content Include="Content\clock.css" />
+    <Content Include="Content\images\91_days.jpg" />
+    <Content Include="Content\images\death_note.jpg" />
+    <Content Include="Content\images\fate_apocrypha.jpg" />
+    <Content Include="Content\images\noragami.jpg" />
+    <Content Include="Content\images\project_k.jpg" />
+    <Content Include="Content\images\steins_gate.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -325,6 +339,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709281837367_BookImagePath.resx">
       <DependentUpon>201709281837367_BookImagePath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709281902354_AddGenres.resx">
+      <DependentUpon>201709281902354_AddGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709281958377_AddFieldYearPublish.resx">
+      <DependentUpon>201709281958377_AddFieldYearPublish.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

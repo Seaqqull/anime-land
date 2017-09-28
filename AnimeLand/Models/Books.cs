@@ -23,6 +23,8 @@ namespace AnimeLand.Models
         [Required]
         [StringLength(100)]
         public String ImagePath { get; set; }
+        [Required]
+        public int YearPublished { get; set; }
 
     }
 }
