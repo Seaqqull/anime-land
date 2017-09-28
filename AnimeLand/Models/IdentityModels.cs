@@ -24,6 +24,8 @@ namespace AnimeLand.Models
         public DbSet<Countries> Countries { get; set; }
         public DbSet<Genres> Genres { get; set; }
         public DbSet<Books> Books { get; set; }
+        public DbSet<BookAuthors> BookAuthors { get; set; }
+        public DbSet<BookGenres> BookGenres { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

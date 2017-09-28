@@ -200,9 +200,15 @@
     <Compile Include="Migrations\201709281724440_InitialModel.Designer.cs">
       <DependentUpon>201709281724440_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709281757463_BooksModel.cs" />
+    <Compile Include="Migrations\201709281757463_BooksModel.Designer.cs">
+      <DependentUpon>201709281757463_BooksModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Authors.cs" />
+    <Compile Include="Models\BookAuthors.cs" />
+    <Compile Include="Models\BookGenres.cs" />
     <Compile Include="Models\Books.cs" />
     <Compile Include="Models\Countries.cs" />
     <Compile Include="Models\Genres.cs" />
@@ -302,6 +308,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201709281724440_InitialModel.resx">
       <DependentUpon>201709281724440_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709281757463_BooksModel.resx">
+      <DependentUpon>201709281757463_BooksModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
