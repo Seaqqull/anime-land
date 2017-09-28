@@ -20,6 +20,11 @@ namespace AnimeLand.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Authors> Authors { get; set; }
+        public DbSet<Countries> Countries { get; set; }
+        public DbSet<Genres> Genres { get; set; }
+        public DbSet<Books> Books { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

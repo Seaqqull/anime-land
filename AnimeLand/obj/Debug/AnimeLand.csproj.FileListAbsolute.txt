@@ -117,3 +117,5 @@ D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.csprojResolve
 D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.csproj.CoreCompileInputs.cache
 D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.dll
 D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.pdb
+D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.Migrations.InitialModel.resources
+D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.csproj.GenerateResource.Cache
