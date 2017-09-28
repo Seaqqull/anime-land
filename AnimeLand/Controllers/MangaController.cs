@@ -1,4 +1,5 @@
 ﻿using AnimeLand.Models;
+using AnimeLand.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,9 @@ namespace AnimeLand.Controllers
         // GET: Manga
         public ActionResult Index()
         {
-            return View();
+            var books = _context.Books.ToList();
+
+            return View(books);
         }
     }
 }

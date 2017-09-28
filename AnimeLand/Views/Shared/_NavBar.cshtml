@@ -36,13 +36,13 @@
                 @if (ViewContext.RouteData.Values["controller"].ToString() == "Home" && ViewContext.RouteData.Values["action"].ToString() == "Index")
                 {
                     <li class="nav-item active">
-                        @Html.ActionLink("Application ", "Index", "Home", new { area = "" }, new { @class = "nav-link" })
+                        @Html.ActionLink("Главная ", "Index", "Home", new { area = "" }, new { @class = "nav-link" })
                     </li>
                 }
                 else
                 {
                     <li class="nav-item">
-                        @Html.ActionLink("Application ", "Index", "Home", new { area = "" }, new { @class = "nav-link" })
+                        @Html.ActionLink("Главная ", "Index", "Home", new { area = "" }, new { @class = "nav-link" })
                     </li>
                 }     
 
@@ -50,13 +50,13 @@
                 @if (ViewContext.RouteData.Values["controller"].ToString() == "Manga" && ViewContext.RouteData.Values["action"].ToString() == "Index")
                 {
                     <li class="nav-item active">
-                        @Html.ActionLink("Manga", "Index", "Manga", new { area = "" }, new { @class = "nav-link" })
+                        @Html.ActionLink("Книги", "Index", "Manga", new { area = "" }, new { @class = "nav-link" })
                     </li>
                 }
                 else
                 {
                     <li class="nav-item">
-                        @Html.ActionLink("Manga", "Index", "Manga", new { area = "" }, new { @class = "nav-link" })
+                        @Html.ActionLink("Книги", "Index", "Manga", new { area = "" }, new { @class = "nav-link" })
                     </li>
                 }  
 
@@ -64,39 +64,39 @@
                 @if (ViewContext.RouteData.Values["controller"].ToString() == "Home" && ViewContext.RouteData.Values["action"].ToString() == "About")
                 {
                     <li class="nav-item active">
-                        @Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })
+                        @Html.ActionLink("О проекте", "About", "Home", new { area = "" }, new { @class = "nav-link" })
                     </li>
                 }
                 else
                 {
                     <li class="nav-item">
-                        @Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })
+                        @Html.ActionLink("О проекте", "About", "Home", new { area = "" }, new { @class = "nav-link" })
                     </li>
                 }  
 
                 @if (ViewContext.RouteData.Values["controller"].ToString() == "Home" && ViewContext.RouteData.Values["action"].ToString() == "Contact")
                 {
                     <li class="nav-item active">
-                        @Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })
+                        @Html.ActionLink("Контакты", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })
                     </li>
                 }
                 else
                 {
                     <li class="nav-item">
-                        @Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })
+                        @Html.ActionLink("Контакты", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })
                     </li>
                 }  
 
                 @if (ViewContext.RouteData.Values["controller"].ToString() == "Home" && ViewContext.RouteData.Values["action"].ToString() == "Rules")
                 {
                     <li class="nav-item active">
-                        @Html.ActionLink("Rules", "Rules", "Home", new { area = "" }, new { @class = "nav-link" })
+                        @Html.ActionLink("Правила", "Rules", "Home", new { area = "" }, new { @class = "nav-link" })
                     </li>
                 }
                 else
                 {
                     <li class="nav-item">
-                        @Html.ActionLink("Rules", "Rules", "Home", new { area = "" }, new { @class = "nav-link" })
+                        @Html.ActionLink("Правила", "Rules", "Home", new { area = "" }, new { @class = "nav-link" })
                     </li>
                 }  
                     
