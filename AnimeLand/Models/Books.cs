@@ -20,6 +20,9 @@ namespace AnimeLand.Models
         public String Discription{ get; set; }
         public Countries Countries { get; set; }
         public int CountriesId { get; set; }
+        [Required]
+        [StringLength(100)]
+        public String ImagePath { get; set; }
 
     }
 }
