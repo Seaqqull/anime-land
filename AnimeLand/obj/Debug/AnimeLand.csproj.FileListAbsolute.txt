@@ -120,3 +120,4 @@ D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.pdb
 D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.Migrations.InitialModel.resources
 D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.csproj.GenerateResource.Cache
 D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.Migrations.BooksModel.resources
+D:\KNU\5_Kurs\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.Migrations.BookAuthors_BookGenres.resources

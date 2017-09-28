@@ -204,6 +204,10 @@
     <Compile Include="Migrations\201709281757463_BooksModel.Designer.cs">
       <DependentUpon>201709281757463_BooksModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709281807378_BookAuthors_BookGenres.cs" />
+    <Compile Include="Migrations\201709281807378_BookAuthors_BookGenres.Designer.cs">
+      <DependentUpon>201709281807378_BookAuthors_BookGenres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Authors.cs" />
@@ -311,6 +315,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709281757463_BooksModel.resx">
       <DependentUpon>201709281757463_BooksModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709281807378_BookAuthors_BookGenres.resx">
+      <DependentUpon>201709281807378_BookAuthors_BookGenres.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
