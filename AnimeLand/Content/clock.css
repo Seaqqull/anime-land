@@ -1,0 +1,70 @@
+.clock {
+  width: 180px;
+  height: 35px;
+  margin-top: 7px;
+  margin-left: 5px;
+	float: left;    
+  color: #FFF;
+  font-family: "Comic Sans MS";
+}
+.clock div {
+  float: left;
+  background: rgba(3, 21, 38, 0.3);
+  border-radius: 6px;
+  box-shadow:  1px 1px 1px;
+  width: 40px;
+  height: 30px;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 12px;
+  margin: 0px 3.5px;		
+}
+.shake_s{
+	-webkit-animation-name: spin;
+	-webkit-animation-duration:900ms;	
+	-moz-animation-name: spin;
+	-moz-animation-duration:900ms;	
+	-ms-animation-name: spin;
+	-ms-animation-duration:900ms;	
+	-o-animation-name: spin;
+	-o-animation-duration:900ms;	
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+}
+.clock  div:hover {
+	cursor: pointer;
+	-webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg) ;
+	-ms-transform: rotate(-15deg) ;
+	-o-transform: rotate(-15deg) ;
+	animation-play-state: paused;
+}
+.shake_cl{
+	-webkit-animation-name: spin;
+	-webkit-animation-duration:2s;
+	-moz-animation-name: spin;
+	-moz-animation-duration:2s;
+	-ms-animation-name: spin;
+	-ms-animation-duration:2s;
+	-o-animation-name: spin;
+	-o-animation-duration:2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	transform: scale(0.9);
+}
+@-webkit-keyframes spin {
+	from{		
+		transform: rotate(0deg) scale(0.9);
+	}
+	to{
+		transform: rotate(360deg) scale(0.9);
+	}
+}
+@keyframes spin {
+	from{		
+		transform: rotate(0deg) scale(0.9);
+	}
+	to{
+		transform: rotate(360deg) scale(0.9);
+	}
+}

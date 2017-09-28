@@ -20,12 +20,16 @@ namespace AnimeLand
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/popper.js",
+                      "~/Scripts/bootstrap_4.min.js",
+                      "~/Scripts/respond.js",
+                      "~/Scripts/clock.js"));
+
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/bootstrap_4.css",
+                      "~/Content/site.css",
+                      "~/Content/clock.css"));
         }
     }
 }

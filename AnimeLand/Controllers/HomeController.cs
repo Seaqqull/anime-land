@@ -26,5 +26,11 @@ namespace AnimeLand.Controllers
 
             return View();
         }
+
+        public ActionResult Rules() {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }

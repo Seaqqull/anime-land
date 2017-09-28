@@ -10,14 +10,20 @@
 </head>
 <body>
     @Html.Partial("_NavBar")
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+    <div class="container body-content" style="min-height:1000px">
+        @RenderBody()   
 
+    </div>
+    @if (ViewContext.RouteData.Values["controller"].ToString() != "Manga")
+    {
+        <hr>
+    }
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </div>
+        <!-- /.container -->
+    </footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
