@@ -220,6 +220,18 @@
     <Compile Include="Migrations\201709281958377_AddFieldYearPublish.Designer.cs">
       <DependentUpon>201709281958377_AddFieldYearPublish.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709282028054_AddBooks.cs" />
+    <Compile Include="Migrations\201709282028054_AddBooks.Designer.cs">
+      <DependentUpon>201709282028054_AddBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709282106010_AddBooksAuthors.cs" />
+    <Compile Include="Migrations\201709282106010_AddBooksAuthors.Designer.cs">
+      <DependentUpon>201709282106010_AddBooksAuthors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709282117114_AddBooksGenres.cs" />
+    <Compile Include="Migrations\201709282117114_AddBooksGenres.Designer.cs">
+      <DependentUpon>201709282117114_AddBooksGenres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Authors.cs" />
@@ -345,6 +357,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709281958377_AddFieldYearPublish.resx">
       <DependentUpon>201709281958377_AddFieldYearPublish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709282028054_AddBooks.resx">
+      <DependentUpon>201709282028054_AddBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709282106010_AddBooksAuthors.resx">
+      <DependentUpon>201709282106010_AddBooksAuthors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709282117114_AddBooksGenres.resx">
+      <DependentUpon>201709282117114_AddBooksGenres.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
