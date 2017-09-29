@@ -30,6 +30,12 @@ namespace AnimeLand
                       "~/Content/bootstrap_4.css",
                       "~/Content/site.css",
                       "~/Content/clock.css"));
+
+            bundles.Add(new StyleBundle("~/Content/ThemeWhite").Include(
+                      "~/Content/bootstrapCosmo.css"));
+
+            bundles.Add(new StyleBundle("~/Content/ThemeDark").Include(
+                      "~/Content/bootstrapCyborg.css"));
         }
     }
 }
