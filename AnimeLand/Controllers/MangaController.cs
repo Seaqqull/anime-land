@@ -24,13 +24,50 @@ namespace AnimeLand.Controllers
         // GET: Manga
         public ActionResult Index(int? page)
         {
-            var books = _context.Books.ToList();
+            Dictionary<int, String> links = new Dictionary<int, String>();
 
-            int pageSize = 3;
-            int pageNumber = (page ?? 1);
+            int pageSize = 2; // books per page
+            int pageNumber = (page ?? 1); // current page
+            int cntBooks = _context.Books.Count(); // count books
+            int countPage = 1; // count pages
+
+            if (cntBooks != 0)
+                countPage = (int)((cntBooks - 1) / pageSize) + 1;
+            if (countPage == 0) countPage = 1;
+            if (pageNumber > countPage) pageNumber = countPage;
+            if (pageNumber == 0) pageNumber = 1;
 
 
-            return View(books.ToPagedList(pageNumber, pageSize));
+            links[pageNumber] = pageNumber.ToString();
+            for (int i = 1; i < 3; i++) {
+                if(pageNumber - i > 0)
+                    links[pageNumber - i] = (i == 2) ? "..." : (pageNumber - i).ToString();
+                if (pageNumber + i <= countPage)
+                    links[pageNumber + i] = (i == 2) ? "..." : (pageNumber + i).ToString();
+            }
+            links[1] = "1";
+            links[countPage] = countPage.ToString();
+
+            //IOrderedEnumerable<KeyValuePair<int, string>> links_ = links.OrderBy(link => link.Key);
+            //links_.ElementAt(links.Count - 1);
+            //var items = from pair in links
+            //            orderby pair.Key ascending
+            //                       select pair;
+
+            //
+            //var books_ = _context.Books.OrderBy(book => book.Id).Skip(pageSize * (pageNumber - 1)).Take(pageSize).ToList(),
+            //
+
+            BookListModel bookListModel = new BookListModel {
+                Books = _context.Books.OrderBy(book => book.Id).Skip(pageSize * (pageNumber - 1)).Take(pageSize).ToList(),
+                Links = links.OrderBy(link => link.Key),
+                CurrentPage = pageNumber
+            };
+
+            return View(bookListModel);
+
+            //var books = _context.Books.ToList();
+            //return View(books.ToPagedList(pageNumber, pageSize));
         }
 
         public ActionResult Detail(int? id)

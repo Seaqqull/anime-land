@@ -1,5 +1,7 @@
-﻿@model PagedList.IPagedList<AnimeLand.Models.Books>
-@using PagedList.Mvc;
+﻿@*model PagedList.IPagedList<AnimeLand.Models.Books> For NuGet linker*@
+@*using PagedList.Mvc; For NuGet linker*@
+@model AnimeLand.ViewModels.BookListModel
+
 <link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
 @*
     
@@ -11,7 +13,7 @@
 
 <h2 class="my-4">Книги</h2>
 
-@foreach (var item in Model)
+@foreach (var item in Model.Books)
 {
     <div class="row">
         <div class="col-md-7">
@@ -28,7 +30,25 @@
     <hr>
 }
 
-@Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+<ul class="pagination justify-content-center">
+    @foreach (var item in Model.Links)
+    {
+        if (item.Key == Model.CurrentPage)
+        {
+            <li class="page-item active">
+                @Html.ActionLink(item.Value, "Index", "Manga", new { area = "", page = item.Key }, new { @class = "page-link" })
+            </li>
+        }
+        else
+        {
+            <li class="page-item">
+                @Html.ActionLink(item.Value, "Index", "Manga", new { area = "", page = item.Key }, new { @class = "page-link" })
+            </li>
+        }
+
+        }
+</ul>
+@*Html.PagedListPager(Model, page => Url.Action("Index", new { page })) For NuGet linker*@ 
 
 <!-- Pagination 
 <ul class="pagination justify-content-center">
