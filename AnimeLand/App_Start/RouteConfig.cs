@@ -14,6 +14,13 @@ namespace AnimeLand
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                "MangaList",
+                "Manga/{page}",
+                new { controller = "Manga", action = "Index"},
+                new { page = @"^[+]?[1-9]\d*\.?[0]*$" }
+                );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

@@ -44,9 +44,9 @@
                     <li class="nav-item">
                         @Html.ActionLink("Главная ", "Index", "Home", new { area = "" }, new { @class = "nav-link" })
                     </li>
-                }     
+                }
 
-                
+
                 @if (ViewContext.RouteData.Values["controller"].ToString() == "Manga" && ViewContext.RouteData.Values["action"].ToString() == "Index")
                 {
                     <li class="nav-item active">
@@ -58,7 +58,7 @@
                     <li class="nav-item">
                         @Html.ActionLink("Книги", "Index", "Manga", new { area = "" }, new { @class = "nav-link" })
                     </li>
-                }  
+                }
 
 
                 @if (ViewContext.RouteData.Values["controller"].ToString() == "Home" && ViewContext.RouteData.Values["action"].ToString() == "About")
@@ -72,7 +72,7 @@
                     <li class="nav-item">
                         @Html.ActionLink("О проекте", "About", "Home", new { area = "" }, new { @class = "nav-link" })
                     </li>
-                }  
+                }
 
                 @if (ViewContext.RouteData.Values["controller"].ToString() == "Home" && ViewContext.RouteData.Values["action"].ToString() == "Contact")
                 {
@@ -85,7 +85,7 @@
                     <li class="nav-item">
                         @Html.ActionLink("Контакты", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })
                     </li>
-                }  
+                }
 
                 @if (ViewContext.RouteData.Values["controller"].ToString() == "Home" && ViewContext.RouteData.Values["action"].ToString() == "Rules")
                 {
@@ -98,9 +98,10 @@
                     <li class="nav-item">
                         @Html.ActionLink("Правила", "Rules", "Home", new { area = "" }, new { @class = "nav-link" })
                     </li>
-                }  
-                    
+                }
+
             </ul>
+            @Html.Partial("_LoginPartial")
         </div>
     </div>
 </nav>
