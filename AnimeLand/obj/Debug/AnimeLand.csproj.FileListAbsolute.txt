@@ -397,4 +397,3 @@ D:\Univer\5_Kurs\1_sm\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.cspro
 D:\Univer\5_Kurs\1_sm\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.csproj.CopyComplete
 D:\Univer\5_Kurs\1_sm\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.dll
 D:\Univer\5_Kurs\1_sm\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.pdb
-D:\Univer\5_Kurs\1_sm\ASP\Homework\AnimeLand\AnimeLand\obj\Debug\AnimeLand.csprojAssemblyReference.cache
